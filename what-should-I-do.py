@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
 import random
+import io
 
-tasks = ["Work on LinkedIn/Portfolio/Website.",
-         "Watch online courses.",
-         "Contribute to Cedille.",
-         "Look for emacs plugins to improve 'workflow'.",
-         "Explore with bash/linux/low level stuff.",
-         "Explore with Cloud stuff.",
-         "Read articles on HackerNews."
-         "Close computer, go read a book you nerd."
-]
+# Read txt file
+with open('tasks.txt', 'r') as myfile:
+    tasks=myfile.read().split('\n')
+    del tasks[-1] # Removes trailing return line
 
-print(tasks[random.randint(1,len(tasks))])
+chosen = tasks[random.randint(0, len(tasks) - 1)]
+
+print(chosen)
