@@ -2,7 +2,7 @@
 A cure for boredom.
 
 A small command-line utility to help you stay productive even if there's nothing
-to. It's like rolling a nice, but with stuff you actually want to get done.
+to. It's like rolling a dice, but with stuff you actually want to get done.
 
 ### Usage
 
